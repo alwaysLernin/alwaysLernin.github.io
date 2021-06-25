@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#canvas1 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+}
+#content {
+  z-index: 999;
+  position: relative; /* This is required so that the z-index works and therefore places all content on top of the canvas */
+}
+.navbar {
+  width: 100%;
+  background-color: black;
+  height: auto; 
+}
+.navButtons {
+  padding: 10px;
+  width: 210px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  list-style-type: none;
+  text-decoration: none;
+  align-items: center;
+}
+.choice {
+  width: 120%;
+  background-color: #FE5000;
+  margin: 5px;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 100%;
+  font-family: prompt;
+}
+.clicked {
+  height: 120%;
+  background-color: #1D1160;
+  font-size: 130%;
+  color: #fff;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5%;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  background-color: #1D1160;
+  }
+.cardName {
+  margin: 5%;
+  text-align: center;
+  height: 1.5em;
+  color: #fff;
+  font-size: 150%;
+}  
+.card__content {
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  min-height: 6em;
+  color: #fff;
+}
+.cardLink {
+  padding-left: 10%;
+  padding-right: 10%;
+  min-height: 3em;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #FE5000;
+  color: #FE5000;
+}
+.videoContainer {
+  margin: 0 auto;
+  width: 400px;
+  left: 0px;
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0px;
+}
+.videoWrapper iframe {
+  position: absolute;
+  margin-top: 2%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+}
+.bioWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+  min-height: 40%;
+}
+.biocard {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  background-color: #1D1160;
+  }
+.biocardName {
+  margin-top: 2%;
+  text-align: center;
+  height: 1em;
+  color: #fff;
+  font-size: 150%;
+}
+.biocard__content {
+  margin-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  min-height: 6em;
+  color: #fff;
+  font-family: prompt;
+}
+.contactWrapper{
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+
+}
+
